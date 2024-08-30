@@ -25,7 +25,7 @@ h2 {
     font-size: 3rem;
 }
 
-h3 {
+h3, .card-header {
     font-family: 'Montserrat';
     font-weight: 700;
 }
@@ -64,11 +64,10 @@ p {
 
 /* Title Image */
 .title-image {
-    width: 60%;
+    width: 22%;
     transform: rotate(25deg);
-    position: relative;
-    top: 190px;
-    left: 12%;
+    position: absolute;
+    right: 25%;
 }
 
 
@@ -135,6 +134,10 @@ p {
     padding: 3% 2%;
 }
 
+.card-header {
+    font-size: 1.75rem;
+}
+
 
 /* CTA Section */
 #cta {
@@ -162,7 +165,7 @@ p {
     margin: 20px 10px;
 }
 
-@media (max-width: 1028px) {
+@media (max-width: 767px) {
     #title {
         text-align: center;
     }
@@ -170,5 +173,28 @@ p {
     .title-image {
         position: static;
         transform: rotate(0);
+        width: 60%;
+    }
+
+    #navbarSupportedContent {
+        text-align: left;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1107px) {
+    .container-fluid {
+        padding: 3% 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 970px) {
+    .title-image {
+        padding-top: 10%;
+    }
+}
+
+@media (min-width: 1115px) {
+    .container-fluid {
+        padding-bottom: 95px;
     }
 }
